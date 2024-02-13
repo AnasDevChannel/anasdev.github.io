@@ -7,7 +7,7 @@
 }
 
 header {
-    background: linear-gradient(to right, #ff00ff, #0000ff);
+    background: linear-gradient(45deg, #ff3aff, #2f2fff , #ff3aff);
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -15,11 +15,17 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 100px 10px 200px;
+    background-size: 5000%;
+    animation: header-gredient 5s infinite;
 }
 
+@keyframes header-gredient{
+    0%{background-position: left;}
+    100%{background-position: right;}
+}
 
 .navigation a {
-    color: #a7fffe;
+    color: #0100ff;
     text-decoration: none;
     font-size: 1.6em;
     font-weight: 700;
@@ -28,7 +34,7 @@ header {
 }
 
 .navigation a:hover{
-    color: #ff00ff;
+    color: #ff3aff;
 }
 
 section{
@@ -241,7 +247,7 @@ section{
     min-height: 14em;
     width: 20em;
     overflow: hidden;
-    border-radius: 30px;
+    border-radius: 25px;
     margin: 20px;
     transition: 0.5s ease;
 }
@@ -266,47 +272,151 @@ section{
     font-size: 1.2em;
     font-weight: 1000;
     background-color: rgb(0, 68, 255);
-    border-radius: 20px;
-    padding: 2px;
-    margin-left: 80px;
+    border-radius: 15px;
+    padding: 0.3em;
+    margin-left: 55px;
     box-shadow: 0px 0px 10px #0000ff, inset 0px 0px 10px #0000ff;
+    transition: 0.5s ease;
 }
 
+.MoreDetails:hover{
+    box-shadow: 0px 0px 20px #0000ff, inset 0px 0px 20px #0000ff;
+}
+
+.projectsmalltext{
+    font-size: 1.2em;
+}
+
+.projects span{
+    font-size: 1.3em;
+    color: #630000;
+}
+
+.projectstitle{
+    display: flex;
+    margin-top: 1.3em;
+}
+
+.waitformany .a{
+    display: flex;
+    justify-content: center;
+    color: #0026ff;
+    text-shadow: 0px 0px 10px #0400ff;
+    font-size: 2.8em;
+    font-weight: 800;
+    transition: 0.5s ease;
+    margin-bottom: 30px;
+}
+
+.waitformany .a:hover{
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px #00ffff;
+}
+
+.waitformany .b{
+    display: flex;
+    justify-content: center;
+    color: #f700ff;
+    text-shadow: 0px 0px 5px #ff0000;
+    font-size: 4.0em;
+    font-weight: 800;
+    transition: 0.5s ease;
+    margin-bottom: 30px;
+}
+
+.waitformany .b:hover{
+    transform: scale(1.2);
+    text-shadow: 0px 0px 10px #ff0000;
+}
+
+.contact{
+    background: linear-gradient(45deg, #ff3aff, #2f2fff , #ff3aff);
+    background-size: 5000%;
+    animation: contact-animation 5s infinite;
+}
+
+@keyframes contact-animation{
+    0%{background-position: left;}
+    100%{background-position: right;}
+}
+
+.contact .title2{
+    display: flex;
+    justify-content: center;
+    color: #ff00ea;
+    text-shadow: 0px 0px 10px #ff00c8;
+    font-size: 2.8em;
+    font-weight: 800;
+    transition: 0.5s ease;
+    margin-bottom: 30px;
+}
+
+.contact .title2:hover{
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px #fb91ff;
+}
+
+.contact .facebookurl{
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 1000;
+    color: black;
+    transition: 0.5s ease;
+}
+
+.contact .facebookurl:hover{
+    color: purple;
+    text-shadow: -3px 3px 5px blue;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.end{
+    display: flex;
+    justify-content: space-between;
+    background: #110714;
+    padding: 2em;
+}
+
+.end .iteatch{
+    font-size: 1.2em;
+}
+
+.end .iteatch span{
+    color: #ff00ff;
+}
+
+@media (max-width: 1000px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 20px;
+        margin-left: -100px;
+    }
+    
+    .logo img{
+        transform: scale(0.7);
+    }
+    
+    .navigation {
+        display: flex;
+        margin-left: -15px;
+        padding-left: 15px;
+        box-shadow: 0px -10px 10px #000000;
+        order: 2;
+    }
+    
+    .main {
+        background-size: cover;
+        background-position: center;
+        transform: scale(1);       
+    }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
